@@ -9,4 +9,5 @@ xcuserdata
 Carthage/Build
 Carthage/Checkouts
 /build
+/.build
 /documentation

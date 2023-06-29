@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "6.0.0"),
+        .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "9.0.0"),
         .package(url: "https://github.com/raphaelmor/Polyline.git", revision: "v5.1.0"),
     ],
     targets: [
@@ -25,8 +25,9 @@ let package = Package(
         .target(
             name: "MapboxDirections",
             dependencies: [
+				.product(name: "OHHTTPStubsSwift", package: "OHHTTPStubs"),
                 .product(name: "Polyline", package: "Polyline"),
-            ]
+            ],
             exclude: [
                 "Info.plist",
                 "MBAttribute.h",
@@ -34,8 +35,6 @@ let package = Package(
                 "MBRoadClasses.h",
                 "MBRouteOptions.h",
                 "MBRouteOptions.m",
-                "MBPlacemarkPrecision.m",
-                "MBPlacemarkScope.h",
             ]
         ),
         .testTarget(
