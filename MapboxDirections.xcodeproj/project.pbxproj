@@ -19,6 +19,10 @@
 		35EFD00C207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */; };
 		35EFD00D207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */; };
 		35EFD00E207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */; };
+		719154122A4D7B1100DE971D /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719154112A4D7B1100DE971D /* Package.swift */; };
+		719154132A4D7B1100DE971D /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719154112A4D7B1100DE971D /* Package.swift */; };
+		719154142A4D7B1100DE971D /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719154112A4D7B1100DE971D /* Package.swift */; };
+		719154152A4D7B1100DE971D /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719154112A4D7B1100DE971D /* Package.swift */; };
 		8D381B611FD9F5B1008D5A58 /* noDestinationName.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D381B601FD9F5B1008D5A58 /* noDestinationName.json */; };
 		8D381B631FDB01D1008D5A58 /* apiDestinationName.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D381B621FDB01D1008D5A58 /* apiDestinationName.json */; };
 		8D381B641FDB0898008D5A58 /* noDestinationName.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D381B601FD9F5B1008D5A58 /* noDestinationName.json */; };
@@ -275,6 +279,7 @@
 		358D48801E2EAB2500F32A65 /* MBRouteOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRouteOptions.h; sourceTree = "<group>"; };
 		358D48851E2EAB4500F32A65 /* MBRouteOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRouteOptions.m; sourceTree = "<group>"; };
 		35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBVisualInstruction.swift; sourceTree = "<group>"; };
+		719154112A4D7B1100DE971D /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8D381B601FD9F5B1008D5A58 /* noDestinationName.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noDestinationName.json; sourceTree = "<group>"; };
 		8D381B621FDB01D1008D5A58 /* apiDestinationName.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = apiDestinationName.json; sourceTree = "<group>"; };
 		8D381B691FDB101F008D5A58 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -455,6 +460,22 @@
 				F448F82A1DDCC5B6000BC343 /* Polyline.framework */,
 			);
 			name = "iOS Frameworks";
+			sourceTree = "<group>";
+		};
+		719154172A4D7B3E00DE971D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DA6C9D891CAE442B00094FBC /* MapboxDirections */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		719154182A4D7B7800DE971D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA6C9D971CAE442B00094FBC /* MapboxDirectionsTests */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		8D381B5F1FD9F592008D5A58 /* Responses */ = {
@@ -671,14 +692,15 @@
 			isa = PBXGroup;
 			children = (
 				DADD27B61E5AAAD800D31FAD /* Directions Example */,
-				DA6C9D891CAE442B00094FBC /* MapboxDirections */,
-				DA6C9D971CAE442B00094FBC /* MapboxDirectionsTests */,
-				DD62544F1AE70C1700017857 /* Products */,
+				C5AD8656202E24F400BF47D5 /* Frameworks */,
 				4025371970E36C6D8BF67116 /* iOS Frameworks */,
 				F448F8321DDCC676000BC343 /* macOS Frameworks */,
+				719154112A4D7B1100DE971D /* Package.swift */,
+				DD62544F1AE70C1700017857 /* Products */,
+				719154172A4D7B3E00DE971D /* Sources */,
+				719154182A4D7B7800DE971D /* Tests */,
 				F448F8331DDCC68D000BC343 /* tvOS Frameworks */,
 				DA9E1B111E5A675F0081EDC7 /* watchOS Frameworks */,
-				C5AD8656202E24F400BF47D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -988,6 +1010,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1177,6 +1200,7 @@
 				8D381B6B1FDB3D8A008D5A58 /* String.swift in Sources */,
 				C56516851FE1AB8F00A0AD18 /* MBVisualInstructionType.swift in Sources */,
 				C54549FC2073F1EF002E273F /* Array.swift in Sources */,
+				719154132A4D7B1100DE971D /* Package.swift in Sources */,
 				C547EC691DB59F8F009817F3 /* MBLane.swift in Sources */,
 				AEDC212120B6125C0052DED8 /* MBComponentRepresentable.swift in Sources */,
 				DA1A10C71D00F969009F82FA /* MBDirections.swift in Sources */,
@@ -1229,6 +1253,7 @@
 				8D381B6C1FDB3D8B008D5A58 /* String.swift in Sources */,
 				C56516861FE1AB9000A0AD18 /* MBVisualInstructionType.swift in Sources */,
 				C54549FD2073F1F0002E273F /* Array.swift in Sources */,
+				719154142A4D7B1100DE971D /* Package.swift in Sources */,
 				C547EC6A1DB59F90009817F3 /* MBLane.swift in Sources */,
 				AEDC212220B6125D0052DED8 /* MBComponentRepresentable.swift in Sources */,
 				DA1A10ED1D010247009F82FA /* MBDirections.swift in Sources */,
@@ -1281,6 +1306,7 @@
 				8D381B6D1FDB3D8B008D5A58 /* String.swift in Sources */,
 				C56516871FE1AB9100A0AD18 /* MBVisualInstructionType.swift in Sources */,
 				C54549FE2073F1F1002E273F /* Array.swift in Sources */,
+				719154152A4D7B1100DE971D /* Package.swift in Sources */,
 				C547EC6B1DB59F91009817F3 /* MBLane.swift in Sources */,
 				AEDC212320B6125E0052DED8 /* MBComponentRepresentable.swift in Sources */,
 				DA1A11041D0103A3009F82FA /* MBDirections.swift in Sources */,
@@ -1315,6 +1341,7 @@
 				C58EA7AA1E9D7EAD008F98CE /* MBCongestion.swift in Sources */,
 				8D381B6A1FDB101F008D5A58 /* String.swift in Sources */,
 				C56516841FE1A2DD00A0AD18 /* MBVisualInstructionType.swift in Sources */,
+				719154122A4D7B1100DE971D /* Package.swift in Sources */,
 				C57D55011DB5669600B94B74 /* MBIntersection.swift in Sources */,
 				AEDC211D20B6104B0052DED8 /* MBComponentRepresentable.swift in Sources */,
 				DA2E03E91CB0E0B000D1269A /* MBRouteStep.swift in Sources */,

@@ -15,8 +15,8 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "OHHTTPStubs", url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "6.0.0"),
-		.package(name: "Polyline", url: "https://github.com/raphaelmor/Polyline.git", revision: "v5.1.0"),
+        .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "6.0.0"),
+		.package(url: "https://github.com/raphaelmor/Polyline.git", revision: "v5.1.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
